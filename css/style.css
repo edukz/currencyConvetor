@@ -1,0 +1,194 @@
+
+
+:root{
+	--grey-color: #373737;
+}
+
+
+body {
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #161616;
+
+}
+
+.wrapper {
+    flex-direction: column;
+	filter: drop-shadow(.75em .75em .5em #454545);
+    max-width: 400px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    background: white;
+}
+
+
+.wrapper header {
+    font-size: 2rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.wrapper form {
+    margin: 40px 0 20px 0;
+}
+
+form :where(input, select, button) {
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+}
+
+form p {
+    font-size: 0.85rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+
+}
+
+form input {
+    height: 50px;
+    border: 1px solid #999;
+    font-size: 1rem;
+    padding: 0 15px;
+}
+
+form input:focus {
+    padding: 0 14px;
+    border: 2px solid #454545;
+}
+
+form .drop-list {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+
+.drop-list .select-box{
+    display: flex;
+    height: 45px;
+    width: 115px;
+    align-items: center;
+    border: 1px solid #999;
+    border-radius: 5px;
+    justify-content: center;
+}
+
+.select-box select{
+    width: auto;
+    font-size: 1rem;
+    margin: 0 -5px 0 5px;
+}
+
+.select-box select::-webkit-scrollbar {
+    width: 8px;
+}
+
+.select-box select::-webkit-scrollbar-track {
+    background: #fff;
+}
+.select-box select::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 8px;
+    border-right: 2px solid #ffffff;
+}
+
+.select-box img{
+    max-width: 25px;
+}
+
+.drop-list .icon {
+    cursor: pointer;
+    font-size: 1.3rem;
+    margin-top: 30px;
+}
+
+form .exchange-rate {
+    font-size: 1rem;
+    font-weight: 500;
+    margin: 20px 0 30px;
+}
+
+/*  PARTE DE ESTILIZAÇÃO DO BOTÃO "CONVERTA AGORA */
+
+.button {
+	appearance: none;
+	background: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	padding: 20px 25px;
+	border-radius: 8px;
+	color: #212121;
+	font-size: 2rem;
+	font-weight: 600;
+	transition: 0.4s;
+}
+
+.button-1 {
+	position: relative;
+  }
+  
+  .button-1:after {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	bottom: 0;
+	right: 0;
+	border-bottom: 3px solid #454545;
+	border-right: 3px solid #454545;
+	transition: all 0.4s, opacity 0.1s 0.4s;
+	opacity: 0;
+  }
+  
+  .button-1:before {
+	content: '';
+	position: absolute;
+	width: 0;
+	height: 0;
+	top: 0;
+	left: 0;
+	border-top: 3px solid #454545;
+	border-left: 3px solid #454545;
+	transition: all 0.4s, opacity 0.1s 0.4s;
+	opacity: 0;
+  }
+  
+  .button-1:hover:after, .button-1:hover:before {
+	width: calc(100% + 5px);
+	height: calc(100% + 5px);
+	transition: all 0.4s, opacity 0.1s;
+	opacity: 1;
+  }
+
+  .info {
+	align-items: center;
+	justify-content: center;
+    flex-direction: column;
+	margin-top: 2rem;
+    max-width: 400px;
+    height: 100%;
+    padding: 20px;
+    border-radius: 7px;
+    background: transparent;
+  }
+  
+  .info header{
+	color: #fff;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 500;
+  }
+
+  .info p2{
+	color: #fff;
+	align-items: center;
+	text-align: justify;
+  }

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script defer src="./js/country-list.js"></script>
+    <script defer src="./js/script.js"></script>
+
+    <title>Conversor de Moedas</title>
+
+</head>
+<body>
+    <div class="wrapper">
+        <header>Conversor de Moedas</header>
+        <form action="#">
+            <div class="amount">
+                <p>Digite o valor</p>
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>Converte de</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/48x36/us.png" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>Para</p>
+                    <div class="select-box">
+                        <img src="https://flagcdn.com/48x36/br.png" alt="flag">
+                        <select></select>
+                    </div>
+                </div>
+            </div>    
+            <div class="exchange-rate"></div>
+            <button class="button button-1">Converta Agora</button>
+    </div>
+    <div class="info">
+        <header>Como Utilizar?</header>
+        <p2>Coloque o valor do país de origem na aba <strong>Converte de</strong> e selecione o país destinatário na aba <strong>Para</strong>
+            e aguarde.
+        </p2>
+    </div>
+</body>
+</html>
